@@ -32,4 +32,14 @@
     <string name="Book">Book</string>
     <string name="SeatsAvailable">Seats Available</string>
     <string name="title_activity_maps">Map</string>
+    <string name="submit_text">Submit</string>
+
+    <!-- Total Seat Spinner -->
+    <array name="total_seats">
+        <item>Select total seats</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+    </array>
 </resources>

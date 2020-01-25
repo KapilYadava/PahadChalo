@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#B6C9CC">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -30,17 +29,15 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/OwnersImage"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_menu_camera"
+                app:civ_border_color="#FF000000"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:clickable="true"
-                android:contentDescription="Profile Picture"
-                android:focusableInTouchMode="true"
-                android:saveEnabled="true"
-                app:srcCompat="@drawable/ic_menu_camera" />
+                app:civ_border_width="1dp" />
 
             <EditText
                 android:id="@+id/FirstName"
@@ -48,12 +45,14 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/FirstName"
+                android:layout_margin="@dimen/margin_five"
                 android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/LastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/LastName"
                 android:inputType="textPersonName" />
@@ -62,6 +61,7 @@
                 android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/Email"
                 android:inputType="textEmailAddress" />
@@ -70,6 +70,7 @@
                 android:id="@+id/Address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/Address"
                 android:inputType="textPostalAddress" />
@@ -78,6 +79,7 @@
                 android:id="@+id/AadhaarNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/AadhaarNumber"
                 android:inputType="number" />
@@ -86,23 +88,28 @@
                 android:id="@+id/CarNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/CarNumber"
                 android:inputType="textPersonName" />
 
-            <EditText
+            <Spinner
                 android:id="@+id/TotalSeats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_five"
                 android:ems="10"
                 android:hint="@string/TotalSeats"
-                android:inputType="number" />
+                android:entries="@array/total_seats"
+                android:padding="10dp" />
 
             <Button
                 android:id="@+id/RegisterSubmit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit" />
+                android:layout_margin="50dp"
+                android:background="@color/colorAccent"
+                android:text="@string/submit_text" />
 
         </LinearLayout>
     </ScrollView>
