@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PAHAAD चलो</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">पहाड़ चलो</string>
+    <string name="nav_header_subtitle">adventureislife@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Login</string>
+    <string name="menu_register">Register</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_ride">Ride Details</string>
+    <string name="menu_send">Send</string>
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="Address">Address (Mentioned on your Adhar Card)</string>
+    <string name="AadhaarNumber">Aadhaar Number</string>
+    <string name="CarNumber">Car Number</string>
+    <string name="TotalSeats">TotalSeats</string>
+    <string name="Forgot_password">Forgot Password ?</string>
+
+    <!--    Page Ride hints-->
+    <string name="Source">Source</string>
+    <string name="Destination">Destination</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Book">Book</string>
+    <string name="SeatsAvailable">Seats Available</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
